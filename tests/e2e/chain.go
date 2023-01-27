@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/cheqd/cosmos-sdk/codec"
+	"github.com/cheqd/cosmos-sdk/crypto/keys/ed25519"
+	"github.com/cheqd/cosmos-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/cheqd/cosmos-sdk/crypto/types"
+	sdk "github.com/cheqd/cosmos-sdk/types"
+	stakingtypes "github.com/cheqd/cosmos-sdk/x/staking/types"
 	tmrand "github.com/tendermint/tendermint/libs/rand"
 
 	gaia "github.com/cosmos/gaia/v7/app"

@@ -14,11 +14,11 @@ import (
 	"github.com/tendermint/tendermint/libs/rand"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	"github.com/cosmos/cosmos-sdk/store"
-	simulation2 "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
+	"github.com/cheqd/cosmos-sdk/baseapp"
+	"github.com/cheqd/cosmos-sdk/simapp"
+	"github.com/cheqd/cosmos-sdk/store"
+	simulation2 "github.com/cheqd/cosmos-sdk/types/simulation"
+	"github.com/cheqd/cosmos-sdk/x/simulation"
 )
 
 func init() {
@@ -26,7 +26,7 @@ func init() {
 }
 
 // Profile with:
-// /usr/local/go/bin/go test -benchmem -run=^$ github.com/cosmos/cosmos-sdk/GaiaApp -bench ^BenchmarkFullAppSimulation$ -Commit=true -cpuprofile cpu.out
+// /usr/local/go/bin/go test -benchmem -run=^$ github.com/cheqd/cosmos-sdk/GaiaApp -bench ^BenchmarkFullAppSimulation$ -Commit=true -cpuprofile cpu.out
 func BenchmarkFullAppSimulation(b *testing.B) {
 	config, db, dir, logger, _, err := simapp.SetupSimulation("goleveldb-app-sim", "Simulation")
 	if err != nil {
@@ -76,8 +76,8 @@ func interBlockCacheOpt() func(*baseapp.BaseApp) {
 	return baseapp.SetInterBlockCache(store.NewCommitKVStoreCacheManager())
 }
 
-//// TODO: Make another test for the fuzzer itself, which just has noOp txs
-//// and doesn't depend on the application.
+// // TODO: Make another test for the fuzzer itself, which just has noOp txs
+// // and doesn't depend on the application.
 func TestAppStateDeterminism(t *testing.T) {
 	if !simapp.FlagEnabledValue {
 		t.Skip("skipping application simulation")

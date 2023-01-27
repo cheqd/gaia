@@ -3,7 +3,7 @@ package params
 import (
 	"strings"
 
-	serverconfig "github.com/cosmos/cosmos-sdk/server/config"
+	serverconfig "github.com/cheqd/cosmos-sdk/server/config"
 )
 
 var (

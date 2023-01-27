@@ -3,7 +3,7 @@ package cmd_test
 import (
 	"testing"
 
-	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
+	svrcmd "github.com/cheqd/cosmos-sdk/server/cmd"
 	"github.com/stretchr/testify/require"
 
 	app "github.com/cosmos/gaia/v7/app"

@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cosmos/cosmos-sdk/server"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/cheqd/cosmos-sdk/server"
+	sdk "github.com/cheqd/cosmos-sdk/types"
+	authtypes "github.com/cheqd/cosmos-sdk/x/auth/types"
+	banktypes "github.com/cheqd/cosmos-sdk/x/bank/types"
+	"github.com/cheqd/cosmos-sdk/x/genutil"
+	genutiltypes "github.com/cheqd/cosmos-sdk/x/genutil/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 )
 

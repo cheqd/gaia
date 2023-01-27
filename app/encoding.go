@@ -3,7 +3,7 @@ package gaia
 import (
 	"github.com/cosmos/gaia/v7/app/params"
 
-	"github.com/cosmos/cosmos-sdk/std"
+	"github.com/cheqd/cosmos-sdk/std"
 )
 
 // MakeEncodingConfig creates an EncodingConfig for testing
